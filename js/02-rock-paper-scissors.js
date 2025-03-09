@@ -1,12 +1,12 @@
 function rockPaperScissors() {
 	do {
-		var userChoice = prompt("Do you choose rock, paper or scissors?").toLowerCase();
+		let userChoice = prompt("Do you choose rock, paper or scissors?").toLowerCase();
 		if (userChoice !== "rock" && userChoice !== "paper" && userChoice !== "scissors") {
 			alert("Invalid choice. Please choose rock, paper or scissors.");
 			continue;
 		}
 
-		var computerChoice = Math.random();
+		let computerChoice = Math.random();
 		if (computerChoice < 0.34) {
 			computerChoice = "rock";
 		} else if(computerChoice <= 0.67) {
